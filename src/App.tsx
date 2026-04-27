@@ -18,6 +18,7 @@ import {
 } from "./utils/wordUtils";
 
 const MAX_INPUT_LENGTH = 15;
+const BONUS_LINK = "https://www.profitablecpmratenetwork.com/j9f627innq?key=be46e17df9e34aa3b5b8e77e88a34740";
 
 export default function App() {
   const [inputLetters, setInputLetters] = useState("");
@@ -108,6 +109,19 @@ export default function App() {
                 <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-600 md:text-base">
                   Enter up to 15 letters, use <code className="rounded bg-white px-1.5 py-0.5 text-stone-800">?</code> or <code className="rounded bg-white px-1.5 py-0.5 text-stone-800">*</code> for wildcard tiles, and narrow the list with quick filters when you already know part of the answer.
                 </p>
+                <div className="mt-5">
+                  <a
+                    href={BONUS_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="inline-flex items-center justify-center rounded-xl bg-amber-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-amber-600"
+                  >
+                    Explore Bonus Offers
+                    <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </a>
+                </div>
               </div>
 
               <div className="grid gap-3 text-sm text-stone-600 sm:grid-cols-3 lg:min-w-[360px]">
