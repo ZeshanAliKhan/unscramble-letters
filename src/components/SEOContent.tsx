@@ -1,5 +1,28 @@
 const CTA_EXTERNAL_LINK = "https://www.profitablecpmratenetwork.com/j9f627innq?key=be46e17df9e34aa3b5b8e77e88a34740";
 
+const NETWORK_LINKS = [
+  {
+    name: "Letters to Words",
+    href: "https://zeshan-letters-to-words.netlify.app/",
+    description: "Use the companion word-making tool when you want another route from mixed letters to grouped answers.",
+  },
+  {
+    name: "Word Unscrambler",
+    href: "https://zeshan-word-unscrambler-876.netlify.app/",
+    description: "Open the sister solver for another wildcard-friendly layout with grouped results and filters.",
+  },
+  {
+    name: "Live Site Directory",
+    href: "https://zeshanalikhan.github.io/creator-app-hub-site/pages/site-directory.html",
+    description: "Browse the wider network of owned tools, GitHub Pages projects, mirrors, and support posts.",
+  },
+  {
+    name: "Google Block Breaker Guide",
+    href: "https://zeshanalikhan.github.io/google-block-breaker-guide/",
+    description: "Another lightweight puzzle-style page in the same publishing network.",
+  },
+];
+
 export function SEOContent() {
   return (
     <section className="mt-8 space-y-6">
@@ -51,6 +74,22 @@ export function SEOContent() {
           >
             Explore bonus offers
           </a>
+        </div>
+      </div>
+
+      <div className="rounded-[20px] border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+        <h2 className="text-2xl font-bold text-stone-900">More live pages in this network</h2>
+        <div className="mt-5 grid gap-4 md:grid-cols-2">
+          {NETWORK_LINKS.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="rounded-2xl border border-stone-200 bg-stone-50 p-4 transition hover:border-amber-300 hover:bg-white hover:shadow-sm"
+            >
+              <h3 className="text-lg font-semibold text-stone-900">{link.name}</h3>
+              <p className="mt-2 text-sm leading-6 text-stone-600">{link.description}</p>
+            </a>
+          ))}
         </div>
       </div>
     </section>
